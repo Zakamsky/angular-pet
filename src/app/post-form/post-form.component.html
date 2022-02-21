@@ -4,6 +4,7 @@
     name="title"
     placeholder="Title"
     [(ngModel)]="title"
+    #inputTitle
   >
   <textarea
     name="text"
@@ -17,4 +18,5 @@
   >
     Add post
   </button>
+  <button (click)="focusTitle()" type="button" class="btn">Focus title</button>
 </form>
